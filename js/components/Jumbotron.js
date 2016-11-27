@@ -1,0 +1,39 @@
+import React from "react";
+import JumbotronContent from "./JumbotronContent";
+
+export default class Jumbotron extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      backgroundImg: "images/test.jpeg"
+    }
+  }
+
+  render() {
+    let styles = {
+      position: "absolute",
+      width: "100%",
+      height: "100%",
+      backgroundImage: "url(" + this.state.backgroundImg + ")",
+      backgroundSize: "100% 100%",
+      zIndex: -1,
+      opacity: 0.6
+    }
+    let styles_2 = {
+      position: "absolute",
+      width: "100%",
+      height: "100%",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center"
+    }
+
+    return (
+      <div style={styles_2}>
+        <div style={styles}></div>
+        <JumbotronContent />
+      </div>
+    );
+  }
+
+}
