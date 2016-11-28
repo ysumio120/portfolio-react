@@ -8,7 +8,7 @@ export default class About extends React.Component {
 
   render() {
     return (
-        <div className="wrapper" id="skills">
+        <section id="skills">
             <h1>Skills</h1>
             <div className="skills">
                 <h3>Front-End</h3>
@@ -23,9 +23,9 @@ export default class About extends React.Component {
                 <h3>Back-End</h3>
                 <SkillsProgress percent={95} skillName="Javascript" />
                 <SkillsProgress percent={80} skillName="Node.js" />
-                <SkillsProgress percent={75} skillName="Express.js" />
+                <SkillsProgress percent={75} skillName="Express" />
                 <SkillsProgress percent={60} skillName="Sequelize (MySQL)" />
-                <SkillsProgress percent={50} skillName="RESTful APIs" />
+                <SkillsProgress percent={50} skillName="REST APIs" />
             </div>
             <div className="skills">
                 <h3>Other</h3>
@@ -33,7 +33,7 @@ export default class About extends React.Component {
                 <SkillsProgress percent={70} skillName="Heroku" />
                 <SkillsProgress percent={80} skillName="Microsoft Office" />
             </div>
-        </div>
+        </section>
 
     );
   }

@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./About";
 import Skills from "./Skills";
+import Portfolio from "./Portfolio";
 
 export default class Content extends React.Component {
   constructor() {
@@ -8,19 +9,11 @@ export default class Content extends React.Component {
   }
 
   render() {
-    let styles = {
-      position: "absolute",
-      width: "100%",
-      height: "100%",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center"
-    }
-
     return (
       <div>
           <About />
           <Skills />
+          <Portfolio />
       </div>
     );
   }

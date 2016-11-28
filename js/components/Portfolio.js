@@ -1,26 +1,19 @@
 import React from "react";
+import Project from "./Project";
 
 export default class About extends React.Component {
   constructor() {
     super();
   }
 
-  render() {
-    let styles = {
-      position: "absolute",
-      width: "100%",
-      height: "100%",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center"
-    }
-
+render() {
     return (
-      <div style={styles}>
-        <div className="wrapper" id="portfolio">
-            
-        </div>
-      </div>
+      <section id="portfolio">
+        <h1>Portfolio</h1>
+        <Project title="Personal Website" imgSrc="images/random_1.jpg"/>
+        <Project title="Personal Website" imgSrc="images/random_2.jpg"/>
+        <Project title="Personal Website" imgSrc="images/random_3.jpg"/>
+      </section>
     );
   }
 }

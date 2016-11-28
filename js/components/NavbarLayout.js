@@ -1,21 +1,3 @@
-// var React = require("react");
-// var NavbarHeader = require("./NavbarHeader");
-// var NavbarNavs = require("./NavbarNavs");
-
-// var NavbarLayout = React.createClass({
-  
-//   render: function() {
-//     return (
-//       <nav className="nav navbar-default container-fluid">
-//         <NavbarHeader brandName= "Yuuta Sumioka"/>
-//         <NavbarNavs />  
-//       </nav>
-//     );
-//   }
-// });
-
-// module.exports = NavbarLayout;
-
 import React from "react";
 import NavbarHeader from "./NavbarHeader";
 import NavbarNavs from "./NavbarNavs";

@@ -34,7 +34,7 @@ export default class NavbarHeader extends React.Component {
   render() {
     return (
       <div className="navbar-header" onMouseOver={this.mouseOver.bind(this)} onMouseOut={this.mouseOut.bind(this)}>
-        <a className="navbar-brand">
+        <a className="navbar-brand" href="#frontpage">
           <img alt="Brand" src={this.state.hover ? "images/nav-brand-hover.png" : "images/nav-brand-nohover.png"}/>
 
         </a>

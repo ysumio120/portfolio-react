@@ -7,7 +7,8 @@ export default class SkillsProgress extends React.Component {
     let color;
     color = this.setColor(this.props.percent);
     this.state = {
-      color: color
+      color: color,
+      percent: 0
     }
   }
 
@@ -20,16 +21,25 @@ export default class SkillsProgress extends React.Component {
         return "limegreen";
   }
 
+  loadBar() {
+    this.setState({percent: this.props.percent});
+  }
+
+  revertBar() {
+    this.setState({percent: 0});
+  }
+
   render() {
     let styles = {
-      width: this.props.percent + "%",
-      backgroundColor: this.state.color
+      width: this.state.percent + "%",
+      backgroundColor: this.state.color,
+      transition: "width 1s"
     }
     return (
-      <div>
+      <div className="skillsProgress" onMouseOver={this.loadBar.bind(this)} onMouseLeave={this.revertBar.bind(this)}>
         <h4>{this.props.skillName}</h4>
         <div id="progressBar">
-          <div style={styles} id="progress"></div>
+          <div style={styles} id="progress" ></div>
         </div>
       </div>
     );
