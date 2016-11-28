@@ -25,7 +25,7 @@ export default class NavbarLayout extends React.Component {
     super();
     this.state = {
       brandName: "Yuuta Sumioka",
-      tabs: ["About", "Portfolio", "Contact"]
+      tabs: ["About", "Skills", "Portfolio", "Contact"]
     }
   }
 
