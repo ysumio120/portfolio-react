@@ -4,13 +4,15 @@ export default class JumbotronContent extends React.Component {
   constructor() {
     super();
     this.state = {
-      role: "Full-stack Web Developer",
+      role: "Full Stack Web Developer",
       objective: "Who loves building web appplications"
     }
   }
 
   render() {
     let styles = {
+      position: "relative",
+      top: "39%",
       color: "#222222",
       fontFamily: "Bungee",
       textAlign: "center"

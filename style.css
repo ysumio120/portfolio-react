@@ -2,6 +2,18 @@ html, body {
   height: 100%;
 }
 
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
+  border-top: 1px solid grey;
+  width: 80%;
+}
+
+#frontpage {
+  position: relative;
+  height: 100%;
+}
 a img {
   width: 40px;
   margin-top: -9px;
@@ -11,6 +23,7 @@ a img {
   /*width: 170px;*/
   /*float: left;*/
   width: 200px;
+  flex: 0 1 200px;
   -webkit-flex: 0 1 200px;
   border-radius: 50%;
   margin: 0 10px;
@@ -24,11 +37,18 @@ a img {
 }
 
 #about{
-  padding-top: 50px;
+  padding: 50px 0;
+  display: flex;
   display: -webkit-flex;
+  display: -moz-flex;
+  -moz-justify-content: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
   -webkit-align-items: center;
+  -moz-align-items: center;
+  flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
 }
 
@@ -40,23 +60,30 @@ a img {
 #skills > h1,
 #portfolio > h1{
   font-family: Bungee;
+  flex: 0 1 100%;
   -webkit-flex: 0 1 100%;
+  -moz-flex: 0 1 100%;
   text-align: center;
 }
 
 #about h3 {
   font-family: Bungee;
+  flex: 0 1 100%;
   -webkit-flex: 0 1 100%;
+  -moz-flex: 0 1 100%;
 }
 
-#skills {
-  padding-top: 50px;
+#skills,
+#portfolio {
+  padding: 50px 0;
 }
 
 #skills h3 {
-    font-family: Bungee;
-    -webkit-flex: 0 1 100%;
-    text-align: center;
+  font-family: Bungee;
+  flex: 0 1 100%;
+  -webkit-flex: 0 1 100%;
+  -moz-flex: 0 1 100%;
+  text-align: center;
 }
 
 #projects {
@@ -69,8 +96,13 @@ a img {
 .skills {
   padding: 30px 10%;
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
   flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
   justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
 
 }
 #progressBar, #progress {
@@ -81,7 +113,9 @@ a img {
 }
 
 .skillsProgress {
+  flex: 0 1 auto;
   -webkit-flex: 0 1 auto;
+  -moz-flex: 0 1 auto;
   display: inline-block;
   text-align: center;
 }
@@ -91,15 +125,22 @@ a img {
 }
 
 #portfolio {
+  display: flex;
   display: -webkit-flex;
-  -webkit-flex-flow: row wrap;
-  -webkit-justify-content: center;  
+  display: -moz-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap; 
   justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;  
+ 
 }
 .project {
   position: relative;
   margin: 10px 20px;
+  flex: 0 1 auto;
   -webkit-flex: 0 1 auto;
+  -moz-flex: 0 1 auto;
   display: inline-block;
   text-align: center;
   background-color: #1c1e22;
@@ -134,10 +175,15 @@ a img {
 }
 
 .projectLinks {
+  display: flex;
   display: -webkit-flex;
+  display: -moz-flex;
+  -moz-justify-content: center;
   -webkit-justify-content: center;
   justify-content: center;
   align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
   height: 100%;
   width: 100%;
   z-index: 2;

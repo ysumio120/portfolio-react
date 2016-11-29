@@ -23,9 +23,15 @@ export default class Jumbotron extends React.Component {
       position: "absolute",
       width: "100%",
       height: "100%",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center"
+      // display: "-moz-box",
+      // display: "-webkit-flex",
+      // // display: "flex",
+      // justifyContent: "center",
+      // WebkitJustifyContent: "center",
+      // MozJustifyContent: "center",
+      // MozAlignItems: "center",
+      // WebkitAlignItems: "center",
+      // alignItems: "center"
     }
 
     return (

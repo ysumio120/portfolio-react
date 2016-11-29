@@ -12,7 +12,9 @@ export default class Content extends React.Component {
     return (
       <div>
           <About />
+          <hr/>
           <Skills />
+          <hr/>
           <Portfolio />
       </div>
     );
