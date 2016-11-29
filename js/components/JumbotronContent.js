@@ -5,7 +5,7 @@ export default class JumbotronContent extends React.Component {
     super();
     this.state = {
       role: "Full-stack Web Developer",
-      objective: "Making web applications that everyone can appreciate"
+      objective: "Who loves building web appplications"
     }
   }
 

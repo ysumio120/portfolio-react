@@ -8,7 +8,7 @@ export default class SkillsProgress extends React.Component {
     color = this.setColor(this.props.percent);
     this.state = {
       color: color,
-      percent: 0
+      percent: this.props.percent
     }
   }
 
@@ -36,11 +36,14 @@ export default class SkillsProgress extends React.Component {
       transition: "width 1s"
     }
     return (
-      <div className="skillsProgress" onMouseOver={this.loadBar.bind(this)} onMouseLeave={this.revertBar.bind(this)}>
+      <div className="skillsProgress" 
+      //onMouseOver={this.loadBar.bind(this)} onMouseLeave={this.revertBar.bind(this)}
+      >
+        <img src={this.props.badge}/>
         <h4>{this.props.skillName}</h4>
-        <div id="progressBar">
+        {/*<div id="progressBar">
           <div style={styles} id="progress" ></div>
-        </div>
+        </div>*/}
       </div>
     );
   }
