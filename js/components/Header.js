@@ -1,7 +1,7 @@
 import React from "react";
-import JumbotronContent from "./JumbotronContent";
+import HeaderContent from "./HeaderContent";
 
-export default class Jumbotron extends React.Component {
+export default class Header extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -37,7 +37,7 @@ export default class Jumbotron extends React.Component {
     return (
       <div style={styles_2}>
         <div style={styles}></div>
-        <JumbotronContent />
+        <HeaderContent />
       </div>
     );
   }

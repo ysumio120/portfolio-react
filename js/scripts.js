@@ -11,7 +11,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import NavbarLayout from "./components/NavbarLayout";
-import Jumbotron from "./components/Jumbotron";
+import Header from "./components/Header";
 import Content from "./components/Content"
 // import About from "./components/About";
 // import Portfolio from "./components/Portfolio";
@@ -23,7 +23,7 @@ var profileContent = document.getElementById("profileContent");
 // var projects = document.getElementById("projects");
 
 ReactDOM.render(<NavbarLayout />, nav);
-ReactDOM.render(<Jumbotron />, frontpage);
+ReactDOM.render(<Header />, frontpage);
 ReactDOM.render(<Content />, profileContent);
 //ReactDOM.render(<Portfolio />, projects)
 

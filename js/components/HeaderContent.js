@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class JumbotronContent extends React.Component {
+export default class HeaderContent extends React.Component {
   constructor() {
     super();
     this.state = {
