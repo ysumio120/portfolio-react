@@ -9,7 +9,7 @@ constructor(props) {
   loadTabs(tabs) {
     return tabs.map(function(item, index) {
         return (<li 
-        onMouseEnter={this.smoothscroll.bind(this)} 
+        //onMouseEnter={this.smoothscroll.bind(this)} 
         key={index}><a href={"#" + item.toLowerCase()}>{item}</a></li>);
     })
   }
