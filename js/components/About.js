@@ -12,10 +12,10 @@ export default class About extends React.Component {
             <img src="images/profile_pic.jpg"/>
             <div>
               <h3>About me</h3>
-              <p>I am a full-stack web developer applying my experiences with Javascript, HTML, CSS, jQuery, Node.js, 
-              MySQL, and responsive design. I like to spend time on the front-end with interests in UX/UI design. Not 
-              only do I enjoy working on the front-end, I also have an understanding of the back-end 
-              having worked with Express.js and Sequelize. I expect to continue learning as new technolgies develop and 
+              <p>I am a full-stack web developer applying my experiences with JavaScript, HTML, CSS, jQuery, and Node.js. 
+              I like to spend time on the front-end with interests in UX/UI design. Lately, I have been working 
+              with React and Redux. Not only do I enjoy developing on the front-end, I also have an understanding of the back-end 
+              having worked with Express, MongoDB, and MySQL. I expect to continue learning as new technolgies develop and 
               tackle any problems or tasks to continue being a well-rounded web developer .</p>
               
               {/*
