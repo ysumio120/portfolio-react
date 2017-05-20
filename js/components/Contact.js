@@ -5,7 +5,7 @@ export default class Contact extends React.Component{
     return (
       <footer id="contact">
         <div>
-          <i className="fa fa-envelope" aria-hidden="true"></i>ysumio120@yahoo.com
+          <i className="fa fa-envelope" aria-hidden="true"></i>yuuta.sumioka@gmail.com
         </div>
         <div>
           <i className="fa fa-phone" aria-hidden="true"></i>(609) 338-7485
